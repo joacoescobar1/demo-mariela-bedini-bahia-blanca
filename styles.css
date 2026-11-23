@@ -270,3 +270,6 @@ details p { margin-top: 10px; color: var(--ink-soft); max-width: 60ch; }
 .brand-wordmark { display: flex; flex-direction: column; justify-content: center; line-height: 1; text-decoration: none; }
 .brand-wordmark .wm-name { font-weight: 800; font-size: 21px; letter-spacing: -0.01em; text-transform: uppercase; }
 .brand-wordmark .wm-sub { font-size: 9.5px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase; opacity: .85; margin-top: 4px; }
+
+/* margen lateral del hero en celular (fix 23/11) */
+.hero .hero-inner { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
