@@ -273,3 +273,9 @@ details p { margin-top: 10px; color: var(--ink-soft); max-width: 60ch; }
 
 /* margen lateral del hero en celular (fix 23/11) */
 .hero .hero-inner { width: min(var(--max), calc(100% - 40px)); margin-inline: auto; }
+
+/* Sin fotos genéricas: bloques de color de la marca */
+.class-tile { background: linear-gradient(160deg, var(--coral) 0%, var(--plum) 100%); }
+.class-tile:nth-child(even) { background: linear-gradient(160deg, var(--coral-ink) 0%, var(--plum) 100%); }
+.sala { background: linear-gradient(135deg, var(--plum) 0%, var(--coral-ink) 100%); min-height: 44vh; }
+.row-ph { display: block; width: 96px; height: 72px; border-radius: 10px; background: linear-gradient(135deg, var(--coral), var(--plum)); flex: none; }

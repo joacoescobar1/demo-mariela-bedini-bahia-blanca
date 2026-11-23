@@ -1,7 +1,3 @@
-const IMG = {
-  zumba: "img/clase-zumba.webp", latino: "img/clase-latino.webp", hiit: "img/clase-hiit.webp",
-  coreo: "img/clase-coreo.webp", funcional: "img/clase-funcional.webp", stretch: "img/clase-stretch.webp"
-};
 const CLASSES = [
   { id: "lun-19", day: "Lunes", time: "19:00", end: "20:00", name: "Zumba Fitness", type: "zumba", teacher: "Profe Ana", cap: 18, spots: 4 },
   { id: "lun-20", day: "Lunes", time: "20:15", end: "21:30", name: "Ritmo latino", type: "latino", teacher: "Profe Nico", cap: 16, spots: 1 },
@@ -52,7 +48,7 @@ function renderSchedule() {
         : `<button class="btn btn-coral" type="button" data-reserve="${c.id}">Reservar</button>`;
     return `<article class="slot">
       <div class="slot-time">${c.time}<small>a ${c.end}</small></div>
-      <img src="${IMG[c.type]}" alt="" loading="lazy" width="96" height="72">
+      <span class="row-ph" aria-hidden="true"></span>
       <div class="slot-info"><h3>${c.name}</h3><p class="slot-sub">${c.teacher} · ${c.cap} lugares</p>${spotsHTML(c, reserved)}</div>
       ${btn}
     </article>`;
